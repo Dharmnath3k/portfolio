@@ -1,4 +1,6 @@
 import { useEffect, useRef } from "react";
+import profileImg from "../assets/images/profile.png";
+import logoImg from "../assets/images/logo.png";
 
 export default function About() {
   const sectionRef = useRef(null);
@@ -41,10 +43,7 @@ export default function About() {
             <div className="about__avatar" aria-hidden="true">
               <div className="about__avatar-inner">
                 <span>
-                  <img
-                    src="src/assets/images/profile.png"
-                    alt="profile image"
-                  />
+                  <img src={profileImg} alt="Dharmnath Thakur" />
                 </span>
               </div>
               <div className="about__avatar-ring about__avatar-ring--1"></div>

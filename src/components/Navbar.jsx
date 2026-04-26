@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import logoImg from "../assets/images/logo.png";
 
 const navLinks = [
   { label: "Home", href: "#home" },
@@ -57,11 +58,7 @@ export default function Navbar() {
           className="navbar__logo"
           onClick={(e) => handleNavClick(e, "#home")}
           aria-label="Dharmnath Thakur - Home">
-          <img
-            className="logo-img"
-            src="src/assets/images/logo.png"
-            alt="Logo"
-          />
+          <img className="logo-img" src={logoImg} alt="Logo" />
         </a>
 
         <ul
